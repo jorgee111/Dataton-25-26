@@ -1,0 +1,209 @@
+/* RESET Y BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* El azul brillante del fondo de la captura */
+    background-color: #2b6aff; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* CONTENEDOR PRINCIPAL (La tarjeta oscura) */
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #0f1115; /* Fondo oscuro tipo "NeuralTech" */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    padding: 40px;
+    overflow: hidden;
+}
+
+/* ENCABEZADO */
+header {
+    text-align: left;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.page-description {
+    font-size: 1.1rem;
+    color: #a0a0a0;
+}
+
+/* LOGOS */
+.logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* TEXTOS Y LISTAS */
+h2 {
+    color: #8daeff; /* Un azul claro para subtítulos */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-left: 4px solid #2b6aff;
+    padding-left: 15px;
+}
+
+h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+.bulleted-list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.bulleted-list li {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 40px 0;
+}
+
+/* CAJAS PARA LAS FASES (F1) */
+.card-box {
+    background-color: #1a1d26;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+}
+
+.card-box p em {
+    color: #8daeff;
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* TABLA DE HORARIOS */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #1a1d26;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #2b6aff;
+    color: white;
+    font-weight: 600;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* SISTEMA DE PUNTUACIÓN */
+.score-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.score-item {
+    flex: 1;
+    min-width: 250px;
+    background: #1a1d26;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.percentage {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2b6aff;
+}
+
+.label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    color: #666;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+footer .small {
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+    .logos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .score-container {
+        flex-direction: column;
+    }
+}
